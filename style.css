@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(10, 60px);
+    border: 3px solid black;
+    width: 600px;
+    height: 600px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid lightgray;
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    box-sizing: border-box;
+}
+
+.player {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+#player1 {
+    background-color: red;
+    left: 15px;
+    top: 555px;
+}
+
+#player2 {
+    background-color: blue;
+    left: 15px;
+    top: 555px;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#roll-dice-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#dice-result, #turn-indicator {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.snake {
+    background-color: #ff0000a0;
+}
+
+.ladder {
+    background-color: #00ff00a0;
+}
